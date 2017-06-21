@@ -36,4 +36,4 @@ Moreover, recursion (in a more Mathematical sense) is studied in the theory of c
 > * can convert between iterative and recursive algorithms.
 > * can describe how a python implements recursion.
 > * can draw a recursion tree for a recursive algorithm.
-{: .testimonial}
+{: .objectives}
