@@ -68,7 +68,8 @@ Let's implement this function:
 
 ~~~
 # POST: return value is the n-th
-#       Fibonacci number F(n)
+#       Fibonacci number
+# Recursive Implementation
 def fib(n):
     if n==0:
         return 0
@@ -112,11 +113,14 @@ Here are two interesting facts about `fib(n)`:
 >
 > > ## Solution
 > > ~~~
+> > # POST: return value is the n-th
+> > #       Fibonacci number
+> > # Iterative Implementation
 > > def fib(n):
-> >    a, b = 0, 1
-> >    for i in range(0, n):
+> >     a, b = 0, 1
+> >     for i in range(0, n):
 > >         a, b = b, a + b
-> >    return a
+> >     return a
 > > ~~~
 > > {: .python}
 > {: .solution}
@@ -131,12 +135,20 @@ Here are two interesting facts about `fib(n)`:
 >
 > > ## Solution
 > > ~~~
+> > # POST: return value is the n-th
+> > #       Fibonacci number
+> > # Direct method using closed-form expression
 > > def fib(n):
-> >    phi = (1 + 5**(1/2)) / 2
-> >    numerator = phi**n - ((-phi)**(-n)) 
-> >    denominator = 2*phi - 1
-> >    return  int(numerator/denominator)
+> >     phi = (1 + 5**(1/2)) / 2
+> >     numerator = phi**n - ((-phi)**(-n)) 
+> >     denominator = 2*phi - 1
+> >     return  int(numerator/denominator)
 > > ~~~
 > > {: .python}
 > {: .solution}
 {: .challenge}
+
+> ## Interesting and useful resources
+> * [Youtube: Fibonacci Programming - Computerphile](https://youtu.be/7t_pTlH9HwA)
+> * [Wikipedia: Fibonnaci number](https://en.wikipedia.org/wiki/Fibonacci_number)
+{: .callout}

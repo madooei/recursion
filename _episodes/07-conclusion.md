@@ -36,3 +36,15 @@ Recursion often leads to code that is easier to write, understand and analyze fo
 In some cases, recursion can also be less efficient:
 * more functional calls and stack operations 	
 * Running out of stack space leads to failure deep recursion 
+
+> ## Interesting and useful resources
+> * [Wikipedia: Induction](https://en.wikipedia.org/wiki/Mathematical_induction)
+> * [Wikipedia: Primitive recursive function](https://en.wikipedia.org/wiki/Primitive_recursive_function)
+> * [Youtube: The Most Difficult Program to Compute? - Computerphile](https://youtu.be/i7sm9dzFtEI)
+> * [Wikipedia: Ackermann function](https://en.wikipedia.org/wiki/Ackermann_function)
+>
+> These are related but beyond the scope of this lesson.
+{: .callout}
+
+
+And finally, these resource are related but beyond the scope of this lesson:

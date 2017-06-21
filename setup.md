@@ -4,5 +4,14 @@ title: Setup
 permalink: /setup/
 ---
 
-You can download the following Jupyter notebook which contains the coding examples in this module. 
-Some of the implementations are left to you to complete as you go through the episodes of this lesson. 
+You can view/download the following Jupyter notebook:
+
+* [Lecture slides](https://anaconda.org/madooei/recursionslides)
+
+* [Codes for lecture notes]( https://anaconda.org/madooei/recursionlecturecodes)
+
+* [Worksheet](https://anaconda.org/madooei/recursionworksheet)
+
+
+
+Note: If the Math notation on __this website__ is not properly loaded, please refresh to reload the page. 

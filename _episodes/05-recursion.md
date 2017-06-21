@@ -59,7 +59,7 @@ The execution of a recursive function is usually illustrated using a __recursion
 
 Below is an example recursive trace for `factorial(4)`:
 
-![](/2017-06-18_11h20_02.png){:width="400px"}
+![]({{ page.root }}/assets/img/2017-06-18_11h20_02.png){:width="400px"}
 
 * Each new recursive function call is indicated by a downward arrow to a new invocation. 
 * When the function returns, an arrow showing this return is drawn and the return value may be indicated alongside this arrow. 
@@ -109,8 +109,11 @@ to open it in a new tab.
 > accommodate all the activation frames required.
 > The result is a stack overflow.
 > A stack overflow causes abnormal termination of the program.
+>
+> In Python, the following error is `StackOverflowError`
+>
+> `RecursionError: maximum recursion depth exceeded`
 {: .callout}
-
 
 
 > ## Tail Recursion
@@ -137,9 +140,9 @@ It diagrams the tree of recursive calls (and the amount of work done at each cal
 
 Recursion tree is specially useful when the function makes more than one recursive calls. 
 For instance, the `fib` function which implements the Fibonacci sequence, makes two recursive calls 
-upon each invocation of the function. Here is the recursion tree for `fib(5)`.
+upon each invocation of the function. Here is the recursion tree for `fib(4)`.
 
-![](/recursion_tree.png){:width="400px"}
+![]({{ page.root }}/assets/img/recursion_tree2.png){:width="800px"}
 
 If you pay close attention to the figure, you will recognize a problem with the 
 `fib` function: some function calls are repeated multiple times. 
@@ -147,3 +150,8 @@ It means some computations are done multiple times. This gets worse as input $n$
 
 This example illustrates that recursive methods can take more time and consumes 
 more memory than iteration, and thus lead to inefficient solutions. 
+
+> ## Interesting and useful resources
+> * [Youtube: EXTRA BITS: Recursion and the Stack - Computerphile](https://youtu.be/0pncNKHj-Sc)
+> * [Wikipedia: Recursion (Computer Science)](https://en.wikipedia.org/wiki/Recursion_(computer_science))
+{: .callout}

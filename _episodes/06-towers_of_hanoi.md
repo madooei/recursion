@@ -75,8 +75,8 @@ def moveDisks(n, source, destination, spare):
         printMove(source, destination)
     else:      # Recursive case
         moveDisks(n-1, source, spare, destination);  # Step 1 above
-        moveDisks(1, source, destination, spare);    # Step 1 above
-        moveDisks(n-1, spare, destination, source);  # Step 1 above
+        moveDisks(1, source, destination, spare);    # Step 2 above
+        moveDisks(n-1, spare, destination, source);  # Step 3 above
 ~~~
 {: .python}
 
@@ -238,3 +238,9 @@ can get all 64 disks to its destination.
 >	* Assume it works. Do not think about how!
 > 4. Use the solutions to the smaller problems to solve the original problem.
 {: .callout}
+
+> ## Interesting and useful resources
+> * [Youtube: The Towers of Hanoi: Experiential Recursive Thinking](https://youtu.be/UuIneNBbscc)
+> * [Wikipedia: Tower of Hanoi](https://en.wikipedia.org/wiki/Tower_of_Hanoi)
+{: .callout}
+

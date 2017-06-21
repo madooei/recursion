@@ -74,7 +74,10 @@ Throughout this process, we have the computer to store and update the largest of
 Here is an implementation of this naive solution:
 
 ~~~
-# Naive approach
+# PRE: a and b are non-negative integers
+# POST: return value is the 
+#       Greatest Common Divisor of a and b
+# Direct Method
 def gcd(a,b):
     d_max = 1
     for d in range(1,min(a,b)+1):
@@ -87,6 +90,10 @@ def gcd(a,b):
 A slightly more efficient implementation of this idea is:
 
 ~~~
+# PRE: a and b are non-negative integers
+# POST: return value is the 
+#       Greatest Common Divisor of a and b
+# Direct Method: More efficient
 def gcd(a,b):
     for d in range(min(a,b),1,-1):
         if a%d==0 and b%d==0:
@@ -183,6 +190,10 @@ So, we have a new algorithm which reduced our computation from (potentially) 1,6
 Each step reduces the size of numbers by about a factor of 2.
 
 ~~~
+# PRE: a and b are non-negative integers
+# POST: return value is the 
+#       Greatest Common Divisor of a and b
+# Euclid Method: Recursive version
 def gcd(a,b):
     if b==0: 
         return a
@@ -229,14 +240,21 @@ The previously describe technique to find GCD is known as the Euclidean algorith
 >
 > > ## Solution
 > > ~~~
+> > # PRE: a and b are non-negative integers
+> > # POST: return value is the 
+> > #       Greatest Common Divisor of a and b
+> > # Euclid Method: Iterative version
 > > def gcd(a,b):
-> >    while b!=0:
-> >        c = b
-> >        b = a%b
-> >        a = c
-> >    return a
+> >     while b!=0:
+> >         c = b
+> >         b = a%b
+> >         a = c
+> >     return a
 > > ~~~
 > > {: .python}
 > {: .solution}
 {: .challenge}
 
+> ## Interesting and useful resources
+> * [Khan Academy: Recursive Algorithms](https://www.khanacademy.org/computing/computer-science/algorithms#recursive-algorithms)
+{: .callout}

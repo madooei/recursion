@@ -7,9 +7,7 @@ questions:
 objectives:
 - "Understand the mechanics of recursion through a recursive implementation of the factorial function."
 keypoints:
-- "We have a __new way of thinking__ about how to compute the value of $n!$."
-- In this new way, we solve the __subproblem__ of computing $(n-1)!$, multiply this result by $n$, and declare $n!$ equal to the result of this product.
-- When we're computing $n!$ in this way, we are using __recursion__.
+- "When computing $n!$ using recursion, we solve the __subproblem__ of computing $(n-1)!$, multiply this result by $n$, and declare $n!$ equal to the result of this product."
 use_math: true
 ---
 
@@ -40,7 +38,7 @@ Note that $0!$ is defined as $1$ (in the same way that $x^0 = 1$ so that the law
 We've seen an implementation of factorial using _for loop_:
 
 ~~~
-# factorial function
+# POST: return value is the n!
 def factorial(n):
     prod = 1
     for i in range(2, n+1):
@@ -51,7 +49,7 @@ def factorial(n):
 
 
 ~~~
-# print n! for n={0,1,2,3,4,5}
+# Print n! for n={0,1,2,3,4,5}
 for n in range(6):
     print("{}! = {}".format(n,factorial(n)))
 ~~~
@@ -99,18 +97,19 @@ When we're computing $n!$ in this way, we call the first case ($n=0$), where we 
 
 
 ~~~
-# Recursive implementation of the factorial function
+# POST: return value is the n!
+# Recursive Implementation
 def factorial(n):
     if n == 0:   # base case
         return 1
     else:        # recursive case
-        return n * factorial(n - 1)  
+        return n * factorial(n - 1)   
 ~~~
 {: .python}
 
 
 ~~~
-# print n! for n={0,1,2,3,4,5}
+# Print n! for n={0,1,2,3,4,5}
 for n in range(6):
     print("{}! = {}".format(n,factorial(n)))
 ~~~
@@ -138,3 +137,8 @@ Note that the implementation of `factorial(n)` does not use any explicit loops. 
 >~~~
 >{: .python}
 {: .discussion}
+
+> ## Interesting and useful resources
+> * [Youtube: What on Earth is Recursion? - Computerphile](https://youtu.be/Mv9NEXX1VHc)
+> * [Wikipedia: Recursive definition](https://en.wikipedia.org/wiki/Recursive_definition)
+{: .callout}
